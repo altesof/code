@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Ejemplo PHP con JQuery Ajax</title>
+    <!--  Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <style media="screen">
+      body {
+        margin: 80px auto;
+        width: 500px;
+      }
+    </style>
+
+  </head>
+  <body>
+
+    <h1>Tutorial JSON</h1>
+
+    <p id="mostrar"></p>
+
+  <script>
+    $(document).on("ready", function(){
+      var objJSON = {"nombre":"Ramiro", "apellido":"Perales", "edad":21}
+
+      $("#mostrar").html(
+        //objJSON.nombre+" "+objJSON.apellido+" "+objJSON.edad
+        "Nombre: <b>"+objJSON.nombre+"</b><br>"+
+        "Apellido: <b>"+objJSON.apellido+"</b><br>"+
+        "Edad: <b>"+objJSON.edad+"</b>"
+      );
+    });
+  </script>
+  </body>
+</html>
