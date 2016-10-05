@@ -1,0 +1,3 @@
+Este es mi texto de fichero1
+
+Estamos intentando modificar contenidos de traves de git
